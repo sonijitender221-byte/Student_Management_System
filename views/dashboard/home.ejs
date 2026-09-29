@@ -1,0 +1,41 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+<div class="layout">
+  <%- include('../partials/sidebar') %>
+  <main class="content">
+    <%- include('../partials/flash') %>
+    <section class="page-head">
+      <h2>Welcome, <%= user.name %></h2>
+      <p>You are logged in as <strong><%= user.role.toUpperCase() %></strong>.</p>
+    </section>
+    <section class="card-grid">
+      <article class="card stat">
+        <h3>Total Students</h3>
+        <p class="big">1,284</p>
+      </article>
+      <article class="card stat">
+        <h3>Active Students</h3>
+        <p class="big">1,102</p>
+      </article>
+      <article class="card stat">
+        <h3>New This Month</h3>
+        <p class="big">74</p>
+      </article>
+      <article class="card stat">
+        <h3>Graduated</h3>
+        <p class="big">182</p>
+      </article>
+    </section>
+    <section class="card">
+      <h3>Recent Activity</h3>
+      <ul class="list-clean">
+        <li>Student profile updated (Sample Data)</li>
+        <li>New student added (Sample Data)</li>
+        <li>Status changed to graduated (Sample Data)</li>
+      </ul>
+      <p class="todo">TODO: Replace static metrics and activity with real database-driven data.</p>
+    </section>
+  </main>
+</div>
+<%- include('../partials/footer') %>
+<%- include('../partials/scripts') %>

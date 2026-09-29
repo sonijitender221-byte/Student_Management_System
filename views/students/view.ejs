@@ -1,0 +1,33 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+<div class="layout">
+  <%- include('../partials/sidebar') %>
+  <main class="content">
+    <section class="page-head row-between">
+      <div>
+        <h2>View Student</h2>
+        <p>Detailed profile and academic overview.</p>
+      </div>
+      <a class="btn" href="/students/1/edit">Edit</a>
+    </section>
+    <section class="card profile-grid">
+      <div>
+        <h3>Student Information</h3>
+        <p><strong>ID:</strong> STU-1001</p>
+        <p><strong>Name:</strong> Priya Sharma</p>
+        <p><strong>Email:</strong> priya@example.com</p>
+        <p><strong>Phone:</strong> 9876543210</p>
+      </div>
+      <div>
+        <h3>Academic Information</h3>
+        <p><strong>Course:</strong> BCA</p>
+        <p><strong>Year:</strong> 2</p>
+        <p><strong>Status:</strong> Active</p>
+        <p><strong>Joined:</strong> Jan 12, 2025</p>
+      </div>
+    </section>
+    <p class="todo">TODO: Populate this page using dynamic student record by route parameter.</p>
+  </main>
+</div>
+<%- include('../partials/footer') %>
+<%- include('../partials/scripts') %>

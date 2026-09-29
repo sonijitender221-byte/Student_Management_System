@@ -1,0 +1,41 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+<div class="layout">
+  <%- include('../partials/sidebar') %>
+  <main class="content">
+    <section class="page-head">
+      <h2>Settings</h2>
+      <p>System-level preferences and account configuration.</p>
+    </section>
+    <section class="card">
+      <form class="form-grid two-col" action="#" method="post">
+        <div>
+          <label>Institution Name</label>
+          <input type="text" placeholder="Bright Future College" />
+        </div>
+        <div>
+          <label>Support Email</label>
+          <input type="email" placeholder="support@college.edu" />
+        </div>
+        <div>
+          <label>Default Student Status</label>
+          <select>
+            <option>Active</option>
+            <option>Inactive</option>
+          </select>
+        </div>
+        <div>
+          <label>Timezone</label>
+          <select>
+            <option>Asia/Kolkata</option>
+            <option>UTC</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Settings</button>
+      </form>
+      <p class="todo">TODO: Implement settings persistence and authorization checks.</p>
+    </section>
+  </main>
+</div>
+<%- include('../partials/footer') %>
+<%- include('../partials/scripts') %>

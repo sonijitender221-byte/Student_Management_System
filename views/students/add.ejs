@@ -1,0 +1,26 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+<div class="layout">
+  <%- include('../partials/sidebar') %>
+  <main class="content">
+    <section class="page-head">
+      <h2>Add Student</h2>
+      <p>Create a new student record.</p>
+    </section>
+    <section class="card">
+      <form class="form-grid two-col" action="#" method="post">
+        <div><label>First Name</label><input type="text" placeholder="First name" /></div>
+        <div><label>Last Name</label><input type="text" placeholder="Last name" /></div>
+        <div><label>Email</label><input type="email" placeholder="student@example.com" /></div>
+        <div><label>Phone</label><input type="text" placeholder="+91" /></div>
+        <div><label>Course</label><input type="text" placeholder="BCA" /></div>
+        <div><label>Year</label><input type="number" placeholder="1" /></div>
+        <div><label>Status</label><select><option>Active</option><option>Inactive</option><option>Graduated</option></select></div>
+        <button class="btn btn-primary" type="submit">Save Student</button>
+      </form>
+      <p class="todo">TODO: Validate input and persist student data to MongoDB.</p>
+    </section>
+  </main>
+</div>
+<%- include('../partials/footer') %>
+<%- include('../partials/scripts') %>

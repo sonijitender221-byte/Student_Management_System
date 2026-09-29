@@ -1,0 +1,26 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+<div class="layout">
+  <%- include('../partials/sidebar') %>
+  <main class="content">
+    <section class="page-head">
+      <h2>Edit Student</h2>
+      <p>Update existing student details.</p>
+    </section>
+    <section class="card">
+      <form class="form-grid two-col" action="#" method="post">
+        <div><label>First Name</label><input type="text" value="Priya" /></div>
+        <div><label>Last Name</label><input type="text" value="Sharma" /></div>
+        <div><label>Email</label><input type="email" value="priya@example.com" /></div>
+        <div><label>Phone</label><input type="text" value="9876543210" /></div>
+        <div><label>Course</label><input type="text" value="BCA" /></div>
+        <div><label>Year</label><input type="number" value="2" /></div>
+        <div><label>Status</label><select><option selected>Active</option><option>Inactive</option><option>Graduated</option></select></div>
+        <button class="btn btn-primary" type="submit">Update Student</button>
+      </form>
+      <p class="todo">TODO: Fetch existing student data and implement update logic.</p>
+    </section>
+  </main>
+</div>
+<%- include('../partials/footer') %>
+<%- include('../partials/scripts') %>

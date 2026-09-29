@@ -1,0 +1,61 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+<div class="layout">
+  <%- include('../partials/sidebar') %>
+  <main class="content">
+    <section class="page-head row-between">
+      <div>
+        <h2>Student List</h2>
+        <p>Browse and manage all student records.</p>
+      </div>
+      <a href="/students/add" class="btn btn-primary">+ Add Student</a>
+    </section>
+
+    <section class="card">
+      <div class="row-between gap">
+        <input class="search" type="text" placeholder="Search by name, email, course..." />
+        <select>
+          <option>All Statuses</option>
+          <option>Active</option>
+          <option>Inactive</option>
+          <option>Graduated</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Email</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>STU-1001</td>
+              <td>Priya Sharma</td>
+              <td>BCA</td>
+              <td>priya@example.com</td>
+              <td><span class="badge active">Active</span></td>
+              <td class="actions"><a href="/students/1">View</a><a href="/students/1/edit">Edit</a></td>
+            </tr>
+            <tr>
+              <td>STU-1002</td>
+              <td>Arjun Mehta</td>
+              <td>BSc IT</td>
+              <td>arjun@example.com</td>
+              <td><span class="badge inactive">Inactive</span></td>
+              <td class="actions"><a href="/students/2">View</a><a href="/students/2/edit">Edit</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="todo">TODO: Connect search/filter/table data with backend queries.</p>
+    </section>
+  </main>
+</div>
+<%- include('../partials/footer') %>
+<%- include('../partials/scripts') %>

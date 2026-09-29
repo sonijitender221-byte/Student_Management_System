@@ -1,0 +1,30 @@
+{
+  "name": "student-management-system-starter",
+  "version": "1.0.0",
+  "description": "Premium starter kit for a Student Management System (MERN-style with EJS) for learning MVC, auth, sessions, and CRUD.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "student-management",
+    "mern",
+    "express",
+    "mongoose",
+    "ejs",
+    "passport"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.19.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
